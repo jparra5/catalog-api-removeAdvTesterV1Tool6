@@ -231,7 +231,7 @@
             };
             
             items.remove( reqMock, resMock );
-            assert( resMock.send.lastCall.calledWith( { msg: 'Successfully deleted item' } ), 'Unexpected argument: ' + JSON.stringify(resMock.send.lastCall.args) );
+            assert( false, 'Unexpected argument: ' + JSON.stringify(resMock.send.lastCall.args) );
         });
         
         it('Item not removed - error on destroy', function() {
