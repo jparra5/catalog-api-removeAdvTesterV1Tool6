@@ -70,5 +70,6 @@ describe('CatalogAPI(' + desired.browserName + ')', function() {
             .title()
             .should.become("Catalog RESTful API")
             .nodeify(done);
+        woot();        
     });
 });
